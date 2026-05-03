@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Lautwimmelbild K</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div>
+        <h1>Lautwimmelbild: K</h1>
+        <p>Tippe auf Dinge, in denen du den Laut K hörst.</p>
+      </div>
+      <button id="toggleHotspots" class="secondary" type="button" aria-pressed="false">Hilfen anzeigen</button>
+    </header>
+
+    <section class="game-card" aria-label="Wimmelbild Bauernhof mit K-Wörtern">
+      <div id="imageStage" class="image-stage">
+        <img id="wimmelbild" src="assets/wimmelbild-k-bauernhof.png" alt="Comic-Wimmelbild Bauernhof zum Laut K" draggable="false" />
+        <div id="hotspotLayer" class="hotspot-layer" aria-label="Klickbare Wörter"></div>
+      </div>
+    </section>
+
+    <section class="status-card" aria-live="polite">
+      <div class="status-main">
+        <span class="label">Gefunden:</span>
+        <strong id="foundCount">0</strong><span>/</span><strong id="totalCount">19</strong>
+      </div>
+      <div id="lastWord" class="last-word">Noch kein Wort gewählt.</div>
+      <button id="resetButton" class="primary" type="button">Neu starten</button>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
